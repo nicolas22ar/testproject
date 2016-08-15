@@ -12,7 +12,9 @@ namespace TestApp.Controllers
         [HttpGet]
         public async Task<string> Get(string moneda)
         {
+            
             return await strategy.DoAlgorithm(moneda);
+            
         }
 
     }

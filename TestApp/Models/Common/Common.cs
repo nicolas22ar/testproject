@@ -21,8 +21,6 @@ namespace TestApp.Models.Common
                 httpResponse = await httpClient.GetAsync(string.Format("Principal/{0}", moneda));
                 httpResponse.EnsureSuccessStatusCode();
             }
-            if ((int)httpResponse.StatusCode != 200) return null;
-
             return await httpResponse.Content.ReadAsStringAsync();
         }
     }

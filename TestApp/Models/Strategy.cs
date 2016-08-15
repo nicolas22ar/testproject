@@ -13,15 +13,15 @@ namespace TestApp.Models
         {
             if (!_strategies.Any())
             {
-                _strategies.Add(nameof(Dolar), new Dolar());
-                _strategies.Add(nameof(Peso), new Peso());
-                _strategies.Add(nameof(Real), new Real());
+                _strategies.Add(nameof(Dolar).ToUpper(), new Dolar());
+                _strategies.Add(nameof(Peso).ToUpper(), new Peso());
+                _strategies.Add(nameof(Real).ToUpper(), new Real());
             }
         }
 
         public async Task<string> DoAlgorithm(string moneda)
         {
-            return await _strategies[moneda].DarCotizacion();
+            return await _strategies[moneda.ToUpper()].DarCotizacion();
         }
     }
 
