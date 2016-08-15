@@ -174,7 +174,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Common\Common.cs" />
-    <Compile Include="Models\Context.cs" />
+    <Compile Include="Models\Strategy.cs" />
     <Compile Include="Models\Database\UsuariosDbEntity.cs" />
     <Compile Include="Models\Dolar.cs" />
     <Compile Include="Models\Interfaces\IMoneda.cs" />

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 using TestApp.Models.Database;
 
@@ -17,6 +13,7 @@ namespace TestApp.Controllers
             dbContext = new DbContext();
         }
 
+        // GET MyResftfullApp/Usuarios
         [HttpGet]
         public List<string> Get()
         {
